@@ -23,10 +23,11 @@ cargo build --release
 
 ```powershell
 mov2mp4.exe a.mov
-mov2mp4.exe "C:\Videos\My Video.MOV"
+mov2mp4.exe *.mov
+mov2mp4.exe "C:\Videos\*.mov"
 ```
 
-`a.mov`는 유지하고 같은 폴더에 `a.mp4`를 만듭니다. MP4 파일이 이미 있으면 덮어쓰지 않습니다. 변환이 실패하면 임시 파일을 삭제합니다.
+첫 번째 명령은 파일 하나를 처리합니다. `*.mov`는 현재 폴더, `C:\Videos\*.mov`는 해당 폴더의 MOV 파일을 모두 처리합니다. 하위 폴더는 검색하지 않으며 `.MOV`처럼 대문자 확장자도 포함합니다. 각 원본 MOV는 유지하고 같은 폴더에 MP4를 만듭니다. 기존 MP4는 덮어쓰지 않습니다. 한 파일이 실패해도 나머지 파일은 계속 처리하며, 변환이 실패하면 해당 임시 파일을 삭제합니다.
 
 성공하면 `변환 : a.mov → a.mp4 [3.55 초]` 형식으로 한 줄만 출력합니다.
 
