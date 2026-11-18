@@ -1,8 +1,8 @@
 [package]
 name = "mov2mp4"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
-description = "Convert an iPhone MOV file to MP4 without changing its video or audio codecs"
+description = "Convert MOV to MP4 and HEIC/HEIF to JPG"
 
 [dependencies]
 miniz_oxide = "0.8"

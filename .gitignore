@@ -1,5 +1,9 @@
 /target/
 /mov2mp4.exee
+/*.heic
+/*.heif
+/*.jpg
+/*.tmp.jpg
 /*.mov
 /*.mp4
 /*.tmp.mp4
